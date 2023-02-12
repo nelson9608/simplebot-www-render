@@ -4,6 +4,8 @@ services:
     name: www
     env: python
     plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: bash ./render.sh
     envVars:
       - key: ADDR
         value: your bot mail address
