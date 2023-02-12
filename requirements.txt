@@ -12,3 +12,6 @@ youtube-dl
 
 # required by admin.py plugin
 psutil
+
+# required by simplebot_render.py plugin
+Flask
