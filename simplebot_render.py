@@ -1,3 +1,4 @@
+import os
 import simplebot
 from threading import Event, Thread
 from flask import Flask, request
@@ -6,8 +7,6 @@ server = Flask(__name__)
 
 @server.route("/")
 def webhook():
-    #bot.remove_webhook()
-    #bot.set_webhook(url=WEBHOOK + TOKEN, allowed_updates=teleutil.update_types, drop_pending_updates = False)
     return "!", 200
     
 def start_background_loop(bridge_initialized: Event) -> None:
