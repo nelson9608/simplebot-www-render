@@ -8,12 +8,12 @@ services:
     startCommand: bash ./render.sh
     envVars:
       - key: ADDR
-        #value: your bot mail address
+        fromGroup: bot
       - key: PASSWORD
-        #value: you bot mail password
+        fromGroup: bot
       - key: ADMIN
-        #value: your mail as bot admin
+        fromGroup: bot
       - key: BOT_NAME
-        #value: www
+        fromGroup: bot
       - key: DELAY
-        #value: 60
+        fromGroup: bot
