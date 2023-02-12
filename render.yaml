@@ -8,12 +8,12 @@ services:
     startCommand: bash ./render.sh
     envVars:
       - key: ADDR
-        fromGroup: bot
+        sync: false
       - key: PASSWORD
-        fromGroup: bot
+        sync: false
       - key: ADMIN
-        fromGroup: bot
+        sync: false
       - key: BOT_NAME
-        fromGroup: bot
+        sync: false
       - key: DELAY
-        fromGroup: bot
+        sync: false
