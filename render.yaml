@@ -1,0 +1,15 @@
+services:
+  # A Python web service
+  - type: web
+    name: www
+    env: python
+    plan: free
+    envVars:
+      - key: ADDR
+        value: your bot mail address
+      - key: PASSWORD
+        value: you bot mail password
+      - key: ADMIN
+        value: your mail as bot admin
+      - key: delay
+        value: 60
