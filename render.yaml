@@ -17,3 +17,9 @@ services:
         sync: false
       - key: DELAY
         sync: false
+      - key: DATABASE_URL
+        fromDatabase:
+        name: botkey
+        property: connectionString
+databases:
+  - name: botkey
