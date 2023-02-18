@@ -1,1 +1,1 @@
-bot: bash heroku.sh
+bot: bash koyeb.sh
