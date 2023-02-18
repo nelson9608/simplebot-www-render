@@ -1,1 +1,1 @@
-bot: bash koyeb.sh
+web: bash koyeb.sh
