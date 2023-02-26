@@ -16,7 +16,7 @@ python3 -m simplebot -a "$ADDR" plugin --add ./web_compress.py
 
 # add the web2pdf plugin
 sudo apt-get install wkhtmltopdf
-python3 -c "import requests; r=requests.get('https://github.com/adbenitez/simplebot-scripts/raw/master/scripts/web2pdf.py'); open('web2pdf.py', 'wb').write(r.content)"
+python3 -c "import requests; r=requests.get('https://github.com/adbenitez/simplebot-scripts/raw/master/scripts/web2pdf.py'); open('web2pdf.py', 'wt').write(r.text.replace('@simplebot.filter','bot.commands.register(name=\"/web2pdf\", func=\"web2pdf_filter\")\n\n'))"
 python3 -m simplebot -a "$ADDR" plugin --add ./web2pdf.py
 
 # add the web_screenshot plugin
