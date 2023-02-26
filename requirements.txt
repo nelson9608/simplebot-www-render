@@ -15,3 +15,6 @@ psutil
 
 # required by simplebot_render.py plugin
 Flask
+
+# required by web2pdf.py plugin
+pdfkit
