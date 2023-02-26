@@ -15,6 +15,7 @@ python3 -c "import requests; r=requests.get('https://github.com/adbenitez/simple
 python3 -m simplebot -a "$ADDR" plugin --add ./web_compress.py
 
 # add the web2pdf plugin
+apt-get install wkhtmltopdf
 python3 -c "import requests; r=requests.get('https://github.com/adbenitez/simplebot-scripts/raw/master/scripts/web2pdf.py'); open('web2pdf.py', 'wb').write(r.content)"
 python3 -m simplebot -a "$ADDR" plugin --add ./web2pdf.py
 
