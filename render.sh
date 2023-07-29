@@ -22,7 +22,7 @@ python3 -c "import requests; r=requests.get('https://github.com/adbenitez/simple
 python3 -m simplebot -a "$ADDR" plugin --add ./web_search.py
 
 # add the youtube plugin
-python3 -c "import requests; r=requests.get('https://github.com/nelson9608/simplebot-scripts/raw/master/scripts/youtube.py'); open('youtube.py', 'wb').write(r.content)"
+python3 -c "import requests; r=requests.get('https://github.com/adbenitez/simplebot-scripts/raw/master/scripts/youtube.py'); open('youtube.py', 'wb').write(r.content)"
 python3 -m simplebot -a "$ADDR" plugin --add ./youtube.py
 
 # add the encryption_error plugin to leverage key changes
