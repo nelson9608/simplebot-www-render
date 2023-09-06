@@ -15,3 +15,8 @@ pdfkit
 
 # required by web_screenshot.py plugin
 pyppeteer
+
+# required by Bing.py plugin
+bs4
+requests 
+simplebot
