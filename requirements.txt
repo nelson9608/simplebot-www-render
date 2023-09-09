@@ -1,5 +1,5 @@
 psycopg2-binary>=2.9.3
-
+git+https://github.com/adbenitez/simplebot_downloader@master#simplebot-downloader
 
 # required by youtube.py plugin
 youtube-dl
